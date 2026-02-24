@@ -1,0 +1,50 @@
+name: DragonEgg
+version: '${project.version}'
+main: com.dragonegg.DragonEggPlugin.DragonEggMain
+api-version: '1.20'
+author: DragonEggTeam
+description: A powerful Dragon Egg plugin with unique mechanics and abilities
+website: https://github.com/DragonEgg/Plugin
+
+# Plugin load order - STARTUP for early initialization
+load: STARTUP
+
+# Soft dependencies for optional integrations
+softdepend:
+  - Vault
+  - LuckPerms
+  - PlaceholderAPI
+
+# All commands registered by the plugin
+commands:
+  dragonegg:
+    description: Main Dragon Egg command
+    usage: /dragonegg <command> [args]
+    aliases: [degg, dragon]
+    permission: dragonegg.use
+
+# Permission definitions
+permissions:
+  dragonegg.use:
+    description: Allows using Dragon Egg features
+    default: true
+  dragonegg.admin:
+    description: Full admin access to all commands
+    default: op
+    children:
+      dragonegg.commands.give: true
+      dragonegg.commands.reload: true
+      dragonegg.commands.info: true
+      dragonegg.commands.sethearts: true
+      dragonegg.commands.addeffect: true
+      dragonegg.commands.removeeffect: true
+      dragonegg.commands.seteffect: true
+      dragonegg.commands.cleareffects: true
+      dragonegg.commands.menu: true
+      dragonegg.bypass.limit: true
+  dragonegg.bypass.limit:
+    description: Bypass heart and effect limits
+    default: op
+  dragonegg.bypass.cooldown:
+    description: Bypass ability cooldowns
+    default: op

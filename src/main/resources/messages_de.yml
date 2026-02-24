@@ -1,0 +1,114 @@
+# DragonEgg Messages - German (de)
+# Deutsche Übersetzung der Nachrichten
+
+prefix: "&5&l[DragonEgg] &r"
+
+general:
+  reload: "&aKonfiguration erfolgreich neu geladen!"
+  no-permission: "&cDu hast keine Berechtigung dafür!"
+  player-not-found: "&cSpieler nicht gefunden!"
+  console-only: "&cDieser Befehl kann nur von der Konsole verwendet werden!"
+  player-only: "&cDieser Befehl kann nur von Spielern verwendet werden!"
+
+egg:
+  obtained: "&6&lDu hast das Drachenei erhalten! &7Spüre seine Kraft..."
+  bonded: "&5&lDas Drachenei hat sich an dich gebunden! &7Nur du kannst seine Kraft nutzen."
+  cannot-use: "&cDieses Drachenei gehört einem anderen Spieler!"
+  cannot-steal: "&cDu kannst ein gebundenes Drachenei nicht stehlen!"
+  placed: "&aDrachenei erfolgreich platziert! &7Seine Kraft strahlt in diesem Bereich."
+  broken: "&cDas Drachenei wurde zerbrochen! &7Seine Kraft wurde freigesetzt."
+  in-range: "&aDu spürst den Segen der Drachenei-Kraft!"
+  out-of-range: "&7Du hast den Kraftbereich des Dracheneis verlassen."
+
+effects:
+  added: "&aEffekt &e%effect% &aStufe &e%level% &ahinzugefügt!"
+  removed: "&cEffekt &e%effect% &centfernt!"
+  level-set: "&aEffekt &e%effect% &aauf Stufe &e%level% &agesetzt!"
+  cleared: "&cAlle Effekte wurden entfernt!"
+  list: "&7Aktive Effekte: &e%effects%"
+  max-level: "&cEffektstufe kann %max% nicht überschreiten!"
+
+hearts:
+  set: "&aZusätzliche Herzen auf &e%amount% &agesetzt!"
+  added: "&e%amount% &azusätzliche Herzen hinzugefügt!"
+  removed: "&e%amount% &czusätzliche Herzen entfernt!"
+  max-reached: "&cMaximale Herzenanzahl erreicht!"
+  current: "&7Du hast &e%current% &7zusätzliche Herzen."
+  bonus: "&6+❤️ +%amount% HP Bonus!"
+
+fury:
+  activated: "&c&l⚔ DRACHENWUT AKTIVIERT! ⚔&r&c"
+  deactivated: "&7Drachenwut ist beendet."
+  cooldown: "&cDrachenwut ist in Abklingzeit! &7(%seconds%s verbleibend)"
+  low-health: "&c&lDeine Gesundheit ist kritisch! Drachenwut verfügbar!"
+
+aura:
+  applied: "&aDrachenaura segnet nahe Verbündete!"
+  removed: "&7Drachenaura-Effekt beendet."
+  tick: "&5✨ Drachenaura heilt dich um %amount% HP!"
+
+shield:
+  activated: "&6&l🛡 Drachenschild blockt den Angriff! 🛡"
+  cooldown: "&7Drachenschild lädt auf... &e(%seconds%s)"
+
+revive:
+  triggered: "&6&l✨ DRACHEN-WIEDERBELEBUNG! ✨&r&6"
+  message: "&aDas Drachenei hat dich vor dem Tod bewahrt!"
+  cooldown: "&cWiederbelebung ist in Abklingzeit! &7(%hours%h %minutes%m verbleibend)"
+  available: "&6&l✨ Du kannst jetzt wiederbeleben!"
+
+evolution:
+  leveled-up: "&5&l🐉 Drachenei zu Stufe %level% evolviert! 🐉"
+  new-ability: "&aNeue Fähigkeit freigeschaltet: &e%ability%"
+  progress: "&7Evolutionsfortschritt: &e%current%&7/&e%required% &7(%percent%)"
+  stage-info: "&7Stufe &e%level%&7: &e%kills% &7Kills, &e%playtime% &7Stunden Spielzeit"
+
+bond:
+  info: "&7Gebunden an: &e%player%"
+  since: "&7Seit: &e%date%"
+  no-bond: "&7Dieses Ei ist an niemanden gebunden."
+
+menu:
+  title: "&5&lDrachenei Konfiguration"
+  toggle-on: "&a&lAKTIVIERT"
+  toggle-off: "&c&lDEAKTIVIERT"
+  effects: "&7Effekte verwalten"
+  hearts: "&7Zusätzliche Herzen verwalten"
+  mechanics: "&7Mechaniken verwalten"
+  visuals: "&7Visuelle Effekte verwalten"
+  back: "&7Zurück"
+  close: "&7Menü schließen"
+  confirm: "&aBestätigen"
+  cancel: "&cAbbrechen"
+
+commands:
+  usage: "&cVerwendung: &e%usage%"
+  give: "&aDrachenei an &e%player% &agegeben!"
+  info-header: "&5&l=== Drachenei Infos ==="
+  info-bonded: "&7Gebunden: &e%bonded%"
+  info-hearts: "&7Zusätzliche Herzen: &e%hearts%"
+  info-effects: "&7Effekte: &e%effects%"
+  info-evolution: "&7Evolutionsstufe: &e%level%"
+  help-header: "&5&l=== Dragon Egg Befehle ==="
+  help-give: "&e/dragonegg give <spieler> &7- Drachenei geben"
+  help-reload: "&e/dragonegg reload &7- Konfiguration neu laden"
+  help-info: "&e/dragonegg info &7- Drachenei Infos anzeigen"
+  help-sethearts: "&e/dragonegg sethearts <anzahl> &7- Zusätzliche Herzen setzen"
+  help-addeffect: "&e/dragonegg addEffect <effekt> <stufe> &7- Effekt hinzufügen"
+  help-removeeffect: "&e/dragonegg removeEffect <effekt> &7- Effekt entfernen"
+  help-seteffect: "&e/dragonegg setEffectLevel <effekt> <stufe> &7- Effektstufe setzen"
+  help-cleareffects: "&e/dragonegg clearEffects &7- Alle Effekte löschen"
+  help-menu: "&e/dragonegg menu &7- Konfigurationsmenü öffnen"
+
+death:
+  with-egg: "&c%player% &7wurde getötet, während er die Kraft des Dracheneis besaß!"
+  by-egg-holder: "&c%player% &7wurde von &c%killer% &7getötet, der das Drachenei besitzt!"
+
+sounds:
+  obtain: "ENTITY_ENDER_DRAGON_GROWL:1.0:1.0"
+  activate: "ENTITY_ENDER_DRAGON_FLAP:1.0:1.5"
+  evolve: "ENTITY_ENDER_DRAGON_GROWL:1.0:0.5"
+  fury: "ENTITY_GENERIC_EXPLODE:1.0:1.5"
+  shield: "BLOCK_ANVIL_PLACE:1.0:2.0"
+  revive: "ENTITY_PLAYER_LEVELUP:1.0:1.0"
+  menu-click: "UI_BUTTON_CLICK:1.0:1.0"

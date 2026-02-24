@@ -1,0 +1,288 @@
+# ╔═══════════════════════════════════════════════════════════╗
+# ║                   DragonEgg Configuration                  ║
+# ║           A powerful Dragon Egg plugin with unique         ║
+# ║              mechanics and abilities for Minecraft         ║
+# ╚═══════════════════════════════════════════════════════════╝
+
+# ═══════════════════════════════════════════════════════════
+# GENERAL SETTINGS
+# ═══════════════════════════════════════════════════════════
+
+# Language for messages (en, ua, pl, de, fr, es)
+language: en
+
+# General plugin settings
+general:
+  # Enable Dragon Egg effects from inventory
+  inventory-mode: true
+  
+  # Enable Dragon Egg effects when placed in world
+  placed-mode: true
+  
+  # Radius for placed egg effects (blocks)
+  placed-radius: 50
+  
+  # Custom Dragon Egg item settings
+  custom-item:
+    enabled: true
+    name: "&5&lDragon Egg"
+    lore:
+      - "&7A legendary egg from the End Dragon"
+      - "&7Grants powerful abilities to its holder"
+      - ""
+      - "&e&lAbilities:"
+      - "&a✓ Permanent Effects"
+      - "&c✓ Extra Hearts"
+      - "&b✓ Dragon Shield"
+      - "&6✓ Dragon Fury"
+      - "&5✓ Dragon Aura"
+      - "&d✓ Revive Mechanic"
+      - ""
+      - "&7Bonded to: &e%player%"
+      - "&7Evolution Level: &e%level%"
+
+# ═══════════════════════════════════════════════════════════
+# DRAGON EGG SETTINGS
+# ═══════════════════════════════════════════════════════════
+
+dragon-egg:
+  # Allow players to place the Dragon Egg as a block
+  # If false, Dragon Eggs cannot be placed and must be kept in inventory
+  placeable: false
+
+# ═══════════════════════════════════════════════════════════
+# PERMANENT EFFECTS
+# ═══════════════════════════════════════════════════════════
+
+effects:
+  # Strength effect
+  STRENGTH:
+    enabled: true
+    level: 1          # Amplifier (1 = Strength I, 2 = Strength II, etc.)
+    duration: 0       # 0 = permanent, otherwise ticks
+    permanent: true
+  
+  # Speed effect
+  SPEED:
+    enabled: true
+    level: 1
+    duration: 0
+    permanent: true
+  
+  # Regeneration effect
+  REGENERATION:
+    enabled: true
+    level: 0          # Regeneration I
+    duration: 0
+    permanent: true
+  
+  # Resistance effect
+  RESISTANCE:
+    enabled: true
+    level: 0
+    duration: 0
+    permanent: true
+  
+  # Fire Resistance
+  FIRE_RESISTANCE:
+    enabled: true
+    level: 0
+    duration: 0
+    permanent: true
+  
+  # Night Vision
+  NIGHT_VISION:
+    enabled: true
+    level: 0
+    duration: 0
+    permanent: true
+
+  # Absorption (extra hearts via effect)
+  ABSORPTION:
+    enabled: true
+    level: 1
+    duration: 0
+    permanent: true
+
+  # Water Breathing
+  WATER_BREATHING:
+    enabled: true
+    level: 0
+    duration: 0
+    permanent: true
+
+  # Luck
+  LUCK:
+    enabled: true
+    level: 0
+    duration: 0
+    permanent: true
+
+  # Haste
+  HASTE:
+    enabled: true
+    level: 1
+    duration: 0
+    permanent: true
+
+  # Jump Boost
+  JUMP_BOOST:
+    enabled: true
+    level: 0
+    duration: 0
+    permanent: true
+
+  # Invisibility
+  INVISIBILITY:
+    enabled: false
+    level: 0
+    duration: 0
+    permanent: true
+
+# ═══════════════════════════════════════════════════════════
+# EXTRA HEARTS SYSTEM
+# ═══════════════════════════════════════════════════════════
+
+hearts:
+  # Base extra hearts granted by Dragon Egg
+  extra: 4            # 4 hearts = +8 HP
+  
+  # Maximum hearts cap (total hearts, not extra)
+  max-cap: 40         # 40 hearts = 80 HP max
+  
+  # Permission-based scaling
+  # Players with these permissions get additional hearts
+  permission-scaling:
+    dragonegg.hearts.vip: 2      # +2 hearts for VIP
+    dragonegg.hearts.mvp: 4      # +4 hearts for MVP
+    dragonegg.hearts.admin: 10   # +10 hearts for Admin
+
+# ═══════════════════════════════════════════════════════════
+# MECHANICS SETTINGS
+# ═══════════════════════════════════════════════════════════
+
+mechanics:
+  # Dragon Aura - buffs nearby teammates
+  aura:
+    enabled: true
+    radius: 10.0          # Radius in blocks
+    pvp-only: false       # Only apply in PvP situations
+    effects:              # Effects to apply to nearby players
+      - "SPEED:1:60"      # Speed I for 3 seconds
+      - "REGENERATION:0:40" # Regeneration I for 2 seconds
+      - "ABSORPTION:1:60"  # Absorption I for 3 seconds
+
+  # Egg Evolution - level up system
+  evolution:
+    enabled: true
+    stages:
+      1:
+        required-kills: 0
+        required-playtime: 0      # In minutes
+        unlocked-effects: []
+      2:
+        required-kills: 10
+        required-playtime: 60
+        unlocked-effects:
+          - "STRENGTH:2"
+      3:
+        required-kills: 25
+        required-playtime: 180
+        unlocked-effects:
+          - "SPEED:2"
+          - "REGENERATION:1"
+      4:
+        required-kills: 50
+        required-playtime: 360
+        unlocked-effects:
+          - "RESISTANCE:1"
+      5:
+        required-kills: 100
+        required-playtime: 720
+        unlocked-effects:
+          - "ABSORPTION:2"
+          - "FIRE_RESISTANCE:0"
+  
+  # Dragon Bond - egg binds to first user
+  bond:
+    enabled: true
+    allow-stealing: false   # Allow egg to be stolen on death/PvP
+  
+  # Dragon Shield - damage negation chance
+  shield:
+    enabled: true
+    negation-chance: 10.0   # 10% chance to negate damage
+    cooldown: 5             # Cooldown in seconds
+  
+  # Revive Mechanic - prevent death once per cooldown
+  revive:
+    enabled: true
+    cooldown-hours: 24      # 24 hours between revives
+    heal-percent: 50.0      # Heal to 50% HP on revive
+    remove-negative-effects: true
+
+# ═══════════════════════════════════════════════════════════
+# VISUAL EFFECTS
+# ═══════════════════════════════════════════════════════════
+
+visuals:
+  # Particle effects
+  particles:
+    enabled: true
+    type: DRAGON_BREATH     # Particle type (DRAGON_BREATH, END_ROD, FLAME, etc.)
+    count: 10               # Number of particles
+    interval: 20            # Ticks between particle spawns
+  
+  # Glowing effect for bonded players
+  glowing:
+    enabled: true
+    color: PURPLE           # Team color (RED, BLUE, GREEN, PURPLE, etc.)
+  
+  # Custom item appearance
+  custom-item:
+    enabled: true
+    name: "&5&lDragon Egg"
+    lore:
+      - "&7A legendary egg from the End Dragon"
+      - "&7Grants powerful abilities"
+      - ""
+      - "&eRight-click for menu"
+
+# ═══════════════════════════════════════════════════════════
+# SOUNDS
+# ═══════════════════════════════════════════════════════════
+
+sounds:
+  # Format: SOUND:VOLUME:PITCH
+  obtain: "ENTITY_ENDER_DRAGON_GROWL:1.0:1.0"
+  activate: "ENTITY_ENDER_DRAGON_FLAP:1.0:1.5"
+  evolve: "ENTITY_ENDER_DRAGON_GROWL:1.0:0.5"
+  fury: "ENTITY_GENERIC_EXPLODE:1.0:1.5"
+  shield: "BLOCK_ANVIL_PLACE:1.0:2.0"
+  revive: "ENTITY_PLAYER_LEVELUP:1.0:1.0"
+  menu-click: "UI_BUTTON_CLICK:1.0:1.0"
+  aura-tick: "BLOCK_BEACON_AMBIENT:0.5:2.0"
+
+# ═══════════════════════════════════════════════════════════
+# UPDATE CHECKER
+# ═══════════════════════════════════════════════════════════
+
+update-checker:
+  enabled: true
+  download-url: "https://modrinth.com/plugin/dragonegg"
+  modrinth-id: ""         # Your Modrinth project ID
+
+# ═══════════════════════════════════════════════════════════
+# METRICS (bStats)
+# ═══════════════════════════════════════════════════════════
+
+metrics:
+  enabled: true
+
+# ═══════════════════════════════════════════════════════════
+# DEBUG SETTINGS
+# ═══════════════════════════════════════════════════════════
+
+debug:
+  enabled: false
+  verbose: false

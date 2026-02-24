@@ -1,0 +1,114 @@
+# DragonEgg Messages - Polish (pl)
+# Tłumaczenie wiadomości na język polski
+
+prefix: "&5&l[DragonEgg] &r"
+
+general:
+  reload: "&aPomyślnie przeładowano konfigurację!"
+  no-permission: "&cNie masz uprawnień do tego!"
+  player-not-found: "&cNie znaleziono gracza!"
+  console-only: "&cTej komendy można użyć tylko z konsoli!"
+  player-only: "&cTej komendy mogą używać tylko gracze!"
+
+egg:
+  obtained: "&6&lUzyskałeś Smocze Jajo! &7Poczuj jego moc..."
+  bonded: "&5&lSmocze Jajo związało się z tobą! &7Tylko ty możesz wieldzieć jego mocą."
+  cannot-use: "&cTo Smocze Jajo należy do innego gracza!"
+  cannot-steal: "&cNie możesz ukraść związanego Smoczego Jaja!"
+  placed: "&aPomyślnie umieszczono Smocze Jajo! &7Jego moc promieniuje w tym obszarze."
+  broken: "&cSmocze Jajo zostało zniszczone! &7Jego moc została uwolniona."
+  in-range: "&aCzujesz błogosławieństwo mocy Smoczego Jaja!"
+  out-of-range: "&7Opuściłeś zasięg mocy Smoczego Jaja."
+
+effects:
+  added: "&aDodano efekt &e%effect% &apoziomu &e%level%&a!"
+  removed: "&cUsunięto efekt &e%effect%&c!"
+  level-set: "&aUstawiono poziom efektu &e%effect% &ana &e%level%&a!"
+  cleared: "&cWszystkie efekty zostały wyczyszczone!"
+  list: "&7Aktywne efekty: &e%effects%"
+  max-level: "&cPoziom efektu nie może przekraczać %max%!"
+
+hearts:
+  set: "&aUstawiono dodatkowe serca na &e%amount%&a!"
+  added: "&aDodano &e%amount% &adodatkowych serc!"
+  removed: "&cUsunięto &e%amount% &cdodatkowych serc!"
+  max-reached: "&cOsiągnięto maksymalną liczbę serc!"
+  current: "&7Masz &e%current% &7dodatkowych serc."
+  bonus: "&6+❤️ +%amount% HP Bonusu!"
+
+fury:
+  activated: "&c&l⚔ SMOCZA FURIA AKTYWOWANA! ⚔&r&c"
+  deactivated: "&7Smocza Furia się zakończyła."
+  cooldown: "&cSmocza Furia jest na odnowieniu! &7(%seconds%s pozostało)"
+  low-health: "&c&lTwoje zdrowie jest krytyczne! Smocza Furia dostępna!"
+
+aura:
+  applied: "&aSmocza Aura błogosławi sojuszników w pobliżu!"
+  removed: "&7Efekt Smoczej Aury zakończony."
+  tick: "&5✨ Smocza Aura leczy cię o %amount% HP!"
+
+shield:
+  activated: "&6&l🛡 Smocza Tarcza zablokowała atak! 🛡"
+  cooldown: "&7Smocza Tarcza się ładuje... &e(%seconds%s)"
+
+revive:
+  triggered: "&6&l✨ SMOCZE OŻYWIENIE! ✨&r&6"
+  message: "&aSmocze Jajo uratowało cię przed śmiercią!"
+  cooldown: "&cOżywienie jest na odnowieniu! &7(%hours%g %minutes%m pozostało)"
+  available: "&6&l✨ Teraz możesz ożyć jeszcze raz!"
+
+evolution:
+  leveled-up: "&5&l🐉 Smocze Jajo ewoluowało do poziomu %level%! 🐉"
+  new-ability: "&aOdblokowano nową umiejętność: &e%ability%"
+  progress: "&7Postęp ewolucji: &e%current%&7/&e%required% &7(%percent%)"
+  stage-info: "&7Poziom &e%level%&7: &e%kills% &7zabójstw, &e%playtime% &7godzin gry"
+
+bond:
+  info: "&7Związany z: &e%player%"
+  since: "&7Od: &e%date%"
+  no-bond: "&7To jajo nie jest z nikim związane."
+
+menu:
+  title: "&5&lKonfiguracja Smoczego Jaja"
+  toggle-on: "&a&lWŁĄCZONE"
+  toggle-off: "&c&lWYŁĄCZONE"
+  effects: "&7Zarządzaj Efektami"
+  hearts: "&7Zarządzaj Dodatkowymi Sercami"
+  mechanics: "&7Zarządzaj Mechanikami"
+  visuals: "&7Zarządzaj Efektami Wizualnymi"
+  back: "&7Powrót"
+  close: "&7Zamknij Menu"
+  confirm: "&aPotwierdź"
+  cancel: "&cAnuluj"
+
+commands:
+  usage: "&cUżycie: &e%usage%"
+  give: "&aDano Smocze Jajo graczowi &e%player%&a!"
+  info-header: "&5&l=== Informacje o Smoczym Jaju ==="
+  info-bonded: "&7Związany: &e%bonded%"
+  info-hearts: "&7Dodatkowe Serca: &e%hearts%"
+  info-effects: "&7Efekty: &e%effects%"
+  info-evolution: "&7Poziom Ewolucji: &e%level%"
+  help-header: "&5&l=== Komendy Dragon Egg ==="
+  help-give: "&e/dragonegg give <gracz> &7- Daj Smocze Jajo"
+  help-reload: "&e/dragonegg reload &7- Przeładuj konfigurację"
+  help-info: "&e/dragonegg info &7- Pokaż informacje o Smoczym Jaju"
+  help-sethearts: "&e/dragonegg sethearts <ilość> &7- Ustaw dodatkowe serca"
+  help-addeffect: "&e/dragonegg addEffect <efekt> <poziom> &7- Dodaj efekt"
+  help-removeeffect: "&e/dragonegg removeEffect <efekt> &7- Usuń efekt"
+  help-seteffect: "&e/dragonegg setEffectLevel <efekt> <poziom> &7- Ustaw poziom efektu"
+  help-cleareffects: "&e/dragonegg clearEffects &7- Wyczyść wszystkie efekty"
+  help-menu: "&e/dragonegg menu &7- Otwórz menu konfiguracji"
+
+death:
+  with-egg: "&c%player% &7został zabity, posiadając moc Smoczego Jaja!"
+  by-egg-holder: "&c%player% &7został zabity przez &c%killer%&7, który posiada Smocze Jajo!"
+
+sounds:
+  obtain: "ENTITY_ENDER_DRAGON_GROWL:1.0:1.0"
+  activate: "ENTITY_ENDER_DRAGON_FLAP:1.0:1.5"
+  evolve: "ENTITY_ENDER_DRAGON_GROWL:1.0:0.5"
+  fury: "ENTITY_GENERIC_EXPLODE:1.0:1.5"
+  shield: "BLOCK_ANVIL_PLACE:1.0:2.0"
+  revive: "ENTITY_PLAYER_LEVELUP:1.0:1.0"
+  menu-click: "UI_BUTTON_CLICK:1.0:1.0"

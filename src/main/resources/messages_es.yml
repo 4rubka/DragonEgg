@@ -1,0 +1,114 @@
+# DragonEgg Messages - Spanish (es)
+# Traducción española de los mensajes
+
+prefix: "&5&l[DragonEgg] &r"
+
+general:
+  reload: "&a¡Configuración recargada con éxito!"
+  no-permission: "&c¡No tienes permiso para hacer eso!"
+  player-not-found: "&c¡Jugador no encontrado!"
+  console-only: "&c¡Este comando solo se puede usar desde la consola!"
+  player-only: "&c¡Este comando solo lo pueden usar los jugadores!"
+
+egg:
+  obtained: "&6&l¡Has obtenido el Huevo de Dragón! &7Siente su poder..."
+  bonded: "&5&l¡El Huevo de Dragón se ha vinculado a ti! &7Solo tú puedes usar su poder."
+  cannot-use: "&c¡Este Huevo de Dragón pertenece a otro jugador!"
+  cannot-steal: "&c¡No puedes robar un Huevo de Dragón vinculado!"
+  placed: "&a¡Huevo de Dragón colocado con éxito! &7Su poder irradia en esta área."
+  broken: "&c¡El Huevo de Dragón se ha roto! &7Su poder ha sido liberado."
+  in-range: "&a¡Sientes la bendición del poder del Huevo de Dragón!"
+  out-of-range: "&7Has salido del rango de poder del Huevo de Dragón."
+
+effects:
+  added: "&a¡Efecto &e%effect% &anivel &e%level% &aagregado!"
+  removed: "&c¡Efecto &e%effect% &celiminado!"
+  level-set: "&a¡Nivel del efecto &e%effect% &aestablecido a &e%level%&a!"
+  cleared: "&c¡Todos los efectos han sido eliminados!"
+  list: "&7Efectos activos: &e%effects%"
+  max-level: "&c¡El nivel del efecto no puede exceder %max%!"
+
+hearts:
+  set: "&a¡Corazones adicionales establecidos a &e%amount%&a!"
+  added: "&a¡&e%amount% &acorazones adicionales agregados!"
+  removed: "&c¡&e%amount% &ccorazones adicionales eliminados!"
+  max-reached: "&c¡Límite máximo de corazones alcanzado!"
+  current: "&7Tienes &e%current% &7corazones adicionales."
+  bonus: "&6+❤️ ¡+%amount% PV de Bonificación!"
+
+fury:
+  activated: "&c&l⚔ ¡FURIA DE DRAGÓN ACTIVADA! ⚔&r&c"
+  deactivated: "&7La Furia de Dragón ha terminado."
+  cooldown: "&c¡La Furia de Dragón está en enfriamiento! &7(%seconds%s restantes)"
+  low-health: "&c&l¡Tu salud es crítica! ¡Furia de Dragón disponible!"
+
+aura:
+  applied: "&a¡El Aura de Dragón bendice a los aliados cercanos!"
+  removed: "&7Efecto del Aura de Dragón terminado."
+  tick: "&5✨ ¡El Aura de Dragón te cura %amount% PV!"
+
+shield:
+  activated: "&6&l🛡 ¡Escudo de Dragón bloqueó el ataque! 🛡"
+  cooldown: "&7Escudo de Dragón recargando... &e(%seconds%s)"
+
+revive:
+  triggered: "&6&l✨ ¡REVIVIR DE DRAGÓN! ✨&r&6"
+  message: "&a¡El Huevo de Dragón te salvó de la muerte!"
+  cooldown: "&c¡Revivir está en enfriamiento! &7(%hours%h %minutes%m restantes)"
+  available: "&6&l✨ ¡Ahora puedes revivir!"
+
+evolution:
+  leveled-up: "&5&l🐉 ¡El Huevo de Dragón evolucionó al nivel %level%! 🐉"
+  new-ability: "&aNueva habilidad desbloqueada: &e%ability%"
+  progress: "&7Progreso de evolución: &e%current%&7/&e%required% &7(%percent%)"
+  stage-info: "&7Nivel &e%level%&7: &e%kills% &7eliminaciones, &e%playtime% &7horas de juego"
+
+bond:
+  info: "&7Vinculado a: &e%player%"
+  since: "&7Desde: &e%date%"
+  no-bond: "&7Este huevo no está vinculado a nadie."
+
+menu:
+  title: "&5&lConfiguración del Huevo de Dragón"
+  toggle-on: "&a&lACTIVADO"
+  toggle-off: "&c&lDESACTIVADO"
+  effects: "&7Gestionar Efectos"
+  hearts: "&7Gestionar Corazones Adicionales"
+  mechanics: "&7Gestionar Mecánicas"
+  visuals: "&7Gestionar Efectos Visuales"
+  back: "&7Atrás"
+  close: "&7Cerrar Menú"
+  confirm: "&aConfirmar"
+  cancel: "&cCancelar"
+
+commands:
+  usage: "&cUso: &e%usage%"
+  give: "&a¡Huevo de Dragón dado a &e%player%&a!"
+  info-header: "&5&l=== Información del Huevo de Dragón ==="
+  info-bonded: "&7Vinculado: &e%bonded%"
+  info-hearts: "&7Corazones Adicionales: &e%hearts%"
+  info-effects: "&7Efectos: &e%effects%"
+  info-evolution: "&7Nivel de Evolución: &e%level%"
+  help-header: "&5&l=== Comandos de Dragon Egg ==="
+  help-give: "&e/dragonegg give <jugador> &7- Dar Huevo de Dragón"
+  help-reload: "&e/dragonegg reload &7- Recargar configuración"
+  help-info: "&e/dragonegg info &7- Mostrar información del Huevo de Dragón"
+  help-sethearts: "&e/dragonegg sethearts <cantidad> &7- Establecer corazones adicionales"
+  help-addeffect: "&e/dragonegg addEffect <efecto> <nivel> &7- Agregar efecto"
+  help-removeeffect: "&e/dragonegg removeEffect <efecto> &7- Eliminar efecto"
+  help-seteffect: "&e/dragonegg setEffectLevel <efecto> <nivel> &7- Establecer nivel de efecto"
+  help-cleareffects: "&e/dragonegg clearEffects &7- Eliminar todos los efectos"
+  help-menu: "&e/dragonegg menu &7- Abrir menú de configuración"
+
+death:
+  with-egg: "&c%player% &7fue asesinado mientras poseía el poder del Huevo de Dragón!"
+  by-egg-holder: "&c%player% &7fue asesinado por &c%killer% &7que posee el Huevo de Dragón!"
+
+sounds:
+  obtain: "ENTITY_ENDER_DRAGON_GROWL:1.0:1.0"
+  activate: "ENTITY_ENDER_DRAGON_FLAP:1.0:1.5"
+  evolve: "ENTITY_ENDER_DRAGON_GROWL:1.0:0.5"
+  fury: "ENTITY_GENERIC_EXPLODE:1.0:1.5"
+  shield: "BLOCK_ANVIL_PLACE:1.0:2.0"
+  revive: "ENTITY_PLAYER_LEVELUP:1.0:1.0"
+  menu-click: "UI_BUTTON_CLICK:1.0:1.0"

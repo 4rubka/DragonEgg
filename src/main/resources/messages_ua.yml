@@ -1,0 +1,130 @@
+# DragonEgg Messages - Ukrainian (ua)
+# Переклад повідомлень українською мовою
+
+# Префікс для всіх повідомлень
+prefix: "&5&l[DragonEgg] &r"
+
+# Загальні повідомлення
+general:
+  reload: "&aКонфігурацію успішно перезавантажено!"
+  no-permission: "&cУ вас немає прав для цього!"
+  player-not-found: "&cГравця не знайдено!"
+  console-only: "&cЦю команду можна використовувати тільки з консолі!"
+  player-only: "&cЦю команду можуть використовувати тільки гравці!"
+
+# Повідомлення яйця дракона
+egg:
+  obtained: "&6&lВи отримали Яйце Дракона! &7Відчуйте його силу..."
+  bonded: "&5&lЯйце Дракона прив'язалося до вас! &7Тільки ви можете володіти його силою."
+  cannot-use: "&cЦе Яйце Дракона належить іншому гравцю!"
+  cannot-steal: "&cВи не можете вкрасти прив'язане Яйце Дракона!"
+  cannot-place: "&cЯйця Дракона не можна розміщувати! &7Їх потрібно тримати в інвентарі."
+  placed: "&aЯйце Дракона успішно розміщено! &7Його сила поширюється в цій області."
+  broken: "&cЯйце Дракона було зруйновано! &7Його сила вивільнилася."
+  in-range: "&aВи відчуваєте благословення сили Яйця Дракона!"
+  out-of-range: "&7Ви покинули зону дії сили Яйця Дракона."
+
+# Повідомлення ефектів
+effects:
+  added: "&aДодано ефект &e%effect% &aрівня &e%level%&a!"
+  removed: "&cВидалено ефект &e%effect%&c!"
+  level-set: "&aВстановлено рівень ефекту &e%effect% &aна &e%level%&a!"
+  cleared: "&cВсі ефекти очищено!"
+  list: "&7Активні ефекти: &e%effects%"
+  max-level: "&cРівень ефекту не може перевищувати %max%!"
+
+# Повідомлення сердець
+hearts:
+  set: "&aВстановлено додаткові серця: &e%amount%&a!"
+  added: "&aДодано &e%amount% &aдодаткових сердець!"
+  removed: "&cВидалено &e%amount% &cдодаткових сердець!"
+  max-reached: "&cДосягнуто максимальної кількості сердець!"
+  current: "&7У вас є &e%current% &7додаткових сердець."
+  bonus: "&6+❤️ +%amount% HP Бонус!"
+
+# Повідомлення люті
+fury:
+  activated: "&c&l⚔ ЛЮТЬ ДРАКОНА АКТИВОВАНА! ⚔&r&c"
+  deactivated: "&7Лють дракона закінчилася."
+  cooldown: "&cЛють дракона на перезарядці! &7(%seconds%с залишилось)"
+  low-health: "&c&lВаше здоров'я критичне! Лють дракона доступна!"
+
+# Повідомлення аури
+aura:
+  applied: "&aАура дракона благословляє союзників поруч!"
+  removed: "&7Дія аури дракона закінчилася."
+  tick: "&5✨ Аура дракона лікує вас на %amount% HP!"
+
+# Повідомлення щита
+shield:
+  activated: "&6&l🛡 Щит дракона заблокував атаку! 🛡"
+  cooldown: "&7Щит дракона перезаряджається... &e(%seconds%с)"
+
+# Повідомлення відродження
+revive:
+  triggered: "&6&l✨ ВІДРОДЖЕННЯ ВІД ДРАКОНА! ✨&r&6"
+  message: "&aЯйце дракона врятувало вас від смерті!"
+  cooldown: "&cВідродження на перезарядці! &7(%hours%г %minutes%хв залишилось)"
+  available: "&6&l✨ Тепер ви можете відродитися ще раз!"
+
+# Повідомлення еволюції
+evolution:
+  leveled-up: "&5&l🐉 Яйце дракона еволюціонувало до рівня %level%! 🐉"
+  new-ability: "&aРозблоковано нову здатність: &e%ability%"
+  progress: "&7Прогрес еволюції: &e%current%&7/&e%required% &7(%percent%)"
+  stage-info: "&7Рівень &e%level%&7: &e%kills% &7вбивств, &e%playtime% &7годин гри"
+
+# Повідомлення прив'язки
+bond:
+  info: "&7Прив'язано до: &e%player%"
+  since: "&7З: &e%date%"
+  no-bond: "&7Це яйце ні до кого не прив'язане."
+
+# Повідомлення меню
+menu:
+  title: "&5&lНалаштування Яйця Дракона"
+  toggle-on: "&a&lУВІМКНЕНО"
+  toggle-off: "&c&lВИМКНЕНО"
+  effects: "&7Керування ефектами"
+  hearts: "&7Керування додатковими серцями"
+  mechanics: "&7Керування механіками"
+  visuals: "&7Керування візуальними ефектами"
+  back: "&7Назад"
+  close: "&7Закрити меню"
+  confirm: "&aПідтвердити"
+  cancel: "&cСкасувати"
+
+# Повідомлення команд
+commands:
+  usage: "&cВикористання: &e%usage%"
+  give: "&aВидано Яйце Дракона гравцю &e%player%&a!"
+  info-header: "&5&l=== Інформація про Яйце Дракона ==="
+  info-bonded: "&7Прив'язано: &e%bonded%"
+  info-hearts: "&7Додаткові серця: &e%hearts%"
+  info-effects: "&7Ефекти: &e%effects%"
+  info-evolution: "&7Рівень еволюції: &e%level%"
+  help-header: "&5&l=== Команди Dragon Egg ==="
+  help-give: "&e/dragonegg give <гравець> &7- Видати Яйце Дракона"
+  help-reload: "&e/dragonegg reload &7- Перезавантажити конфігурацію"
+  help-info: "&e/dragonegg info &7- Показати інформацію про Яйце Дракона"
+  help-sethearts: "&e/dragonegg sethearts <кількість> &7- Встановити додаткові серця"
+  help-addeffect: "&e/dragonegg addEffect <ефект> <рівень> &7- Додати ефект"
+  help-removeeffect: "&e/dragonegg removeEffect <ефект> &7- Видалити ефект"
+  help-seteffect: "&e/dragonegg setEffectLevel <ефект> <рівень> &7- Встановити рівень ефекту"
+  help-cleareffects: "&e/dragonegg clearEffects &7- Очистити всі ефекти"
+  help-menu: "&e/dragonegg menu &7- Відкрити меню налаштувань"
+
+# Повідомлення смерті
+death:
+  with-egg: "&c%player% &7був убитий, володіючи силою Яйця Дракона!"
+  by-egg-holder: "&c%player% &7був убитий &c%killer%&7, який володіє Яйцем Дракона!"
+
+# Налаштування звуків
+sounds:
+  obtain: "ENTITY_ENDER_DRAGON_GROWL:1.0:1.0"
+  activate: "ENTITY_ENDER_DRAGON_FLAP:1.0:1.5"
+  evolve: "ENTITY_ENDER_DRAGON_GROWL:1.0:0.5"
+  fury: "ENTITY_GENERIC_EXPLODE:1.0:1.5"
+  shield: "BLOCK_ANVIL_PLACE:1.0:2.0"
+  revive: "ENTITY_PLAYER_LEVELUP:1.0:1.0"
+  menu-click: "UI_BUTTON_CLICK:1.0:1.0"

@@ -1,0 +1,114 @@
+# DragonEgg Messages - French (fr)
+# Traduction française des messages
+
+prefix: "&5&l[DragonEgg] &r"
+
+general:
+  reload: "&aConfiguration rechargée avec succès!"
+  no-permission: "&cVous n'avez pas la permission de faire cela!"
+  player-not-found: "&cJoueur non trouvé!"
+  console-only: "&cCette commande ne peut être utilisée que depuis la console!"
+  player-only: "&cCette commande ne peut être utilisée que par les joueurs!"
+
+egg:
+  obtained: "&6&lVous avez obtenu l'Œuf de Dragon! &7Ressentez sa puissance..."
+  bonded: "&5&lL'Œuf de Dragon s'est lié à vous! &7Seul vous pouvez wielder sa puissance."
+  cannot-use: "&cCet Œuf de Dragon appartient à un autre joueur!"
+  cannot-steal: "&cVous ne pouvez pas voler un Œuf de Dragon lié!"
+  placed: "&aŒuf de Dragon placé avec succès! &7Sa puissance rayonne dans cette zone."
+  broken: "&cL'Œuf de Dragon a été brisé! &7Sa puissance a été libérée."
+  in-range: "&aVous ressentez la bénédiction de la puissance de l'Œuf de Dragon!"
+  out-of-range: "&7Vous avez quitté la zone de puissance de l'Œuf de Dragon."
+
+effects:
+  added: "&aEffet &e%effect% &aniveau &e%level% &aajouté!"
+  removed: "&cEffet &e%effect% &csupprimé!"
+  level-set: "&aNiveau de l'effet &e%effect% &adéfini à &e%level%&a!"
+  cleared: "&cTous les effets ont été supprimés!"
+  list: "&7Effets actifs: &e%effects%"
+  max-level: "&cLe niveau de l'effet ne peut pas dépasser %max%!"
+
+hearts:
+  set: "&aCœurs supplémentaires définis à &e%amount%&a!"
+  added: "&a&e%amount% &acœurs supplémentaires ajoutés!"
+  removed: "&c&e%amount% &ccœurs supplémentaires supprimés!"
+  max-reached: "&cLimite maximale de cœurs atteinte!"
+  current: "&7Vous avez &e%current% &7cœurs supplémentaires."
+  bonus: "&6+❤️ +%amount% PV Bonus!"
+
+fury:
+  activated: "&c&l⚔ FURIE DU DRAGON ACTIVÉE! ⚔&r&c"
+  deactivated: "&7La Furie du Dragon est terminée."
+  cooldown: "&cLa Furie du Dragon est en recharge! &7(%seconds%s restants)"
+  low-health: "&c&lVotre santé est critique! Furie du Dragon disponible!"
+
+aura:
+  applied: "&aL'Aura du Dragon bénit les alliés proches!"
+  removed: "&7Effet de l'Aura du Dragon terminé."
+  tick: "&5✨ L'Aura du Dragon vous soigne de %amount% PV!"
+
+shield:
+  activated: "&6&l🛡 Bouclier du Dragon a bloqué l'attaque! 🛡"
+  cooldown: "&7Bouclier du Dragon en recharge... &e(%seconds%s)"
+
+revive:
+  triggered: "&6&l✨ RÉVIVIFICATION DU DRAGON! ✨&r&6"
+  message: "&aL'Œuf de Dragon vous a sauvé de la mort!"
+  cooldown: "&cLa révivification est en recharge! &7(%hours%h %minutes%m restants)"
+  available: "&6&l✨ Vous pouvez maintenant vous révivifier!"
+
+evolution:
+  leveled-up: "&5&l🐉 L'Œuf de Dragon a évolué au niveau %level%! 🐉"
+  new-ability: "&aNouvelle capacité débloquée: &e%ability%"
+  progress: "&7Progression de l'évolution: &e%current%&7/&e%required% &7(%percent%)"
+  stage-info: "&7Niveau &e%level%&7: &e%kills% &7kills, &e%playtime% &7heures de jeu"
+
+bond:
+  info: "&7Lié à: &e%player%"
+  since: "&7Depuis: &e%date%"
+  no-bond: "&7Cet œuf n'est lié à personne."
+
+menu:
+  title: "&5&lConfiguration de l'Œuf de Dragon"
+  toggle-on: "&a&lACTIVÉ"
+  toggle-off: "&c&lDÉSACTIVÉ"
+  effects: "&7Gérer les Effets"
+  hearts: "&7Gérer les Cœurs Supplémentaires"
+  mechanics: "&7Gérer les Mécaniques"
+  visuals: "&7Gérer les Effets Visuels"
+  back: "&7Retour"
+  close: "&7Fermer le Menu"
+  confirm: "&aConfirmer"
+  cancel: "&cAnnuler"
+
+commands:
+  usage: "&cUtilisation: &e%usage%"
+  give: "&aŒuf de Dragon donné à &e%player%&a!"
+  info-header: "&5&l=== Infos Œuf de Dragon ==="
+  info-bonded: "&7Lié: &e%bonded%"
+  info-hearts: "&7Cœurs Supplémentaires: &e%hearts%"
+  info-effects: "&7Effets: &e%effects%"
+  info-evolution: "&7Niveau d'Évolution: &e%level%"
+  help-header: "&5&l=== Commandes Dragon Egg ==="
+  help-give: "&e/dragonegg give <joueur> &7- Donner l'Œuf de Dragon"
+  help-reload: "&e/dragonegg reload &7- Recharger la configuration"
+  help-info: "&e/dragonegg info &7- Afficher les infos de l'Œuf de Dragon"
+  help-sethearts: "&e/dragonegg sethearts <quantité> &7- Définir les cœurs supplémentaires"
+  help-addeffect: "&e/dragonegg addEffect <effet> <niveau> &7- Ajouter un effet"
+  help-removeeffect: "&e/dragonegg removeEffect <effet> &7- Supprimer un effet"
+  help-seteffect: "&e/dragonegg setEffectLevel <effet> <niveau> &7- Définir le niveau d'effet"
+  help-cleareffects: "&e/dragonegg clearEffects &7- Supprimer tous les effets"
+  help-menu: "&e/dragonegg menu &7- Ouvrir le menu de configuration"
+
+death:
+  with-egg: "&c%player% &7a été tué en possédant la puissance de l'Œuf de Dragon!"
+  by-egg-holder: "&c%player% &7a été tué par &c%killer% &7qui possède l'Œuf de Dragon!"
+
+sounds:
+  obtain: "ENTITY_ENDER_DRAGON_GROWL:1.0:1.0"
+  activate: "ENTITY_ENDER_DRAGON_FLAP:1.0:1.5"
+  evolve: "ENTITY_ENDER_DRAGON_GROWL:1.0:0.5"
+  fury: "ENTITY_GENERIC_EXPLODE:1.0:1.5"
+  shield: "BLOCK_ANVIL_PLACE:1.0:2.0"
+  revive: "ENTITY_PLAYER_LEVELUP:1.0:1.0"
+  menu-click: "UI_BUTTON_CLICK:1.0:1.0"

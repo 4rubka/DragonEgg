@@ -1,0 +1,130 @@
+# DragonEgg Messages - English (en)
+# Translate these messages to your language
+
+# Prefix for all messages
+prefix: "&5&l[DragonEgg] &r"
+
+# General messages
+general:
+  reload: "&aConfiguration reloaded successfully!"
+  no-permission: "&cYou don't have permission to do that!"
+  player-not-found: "&cPlayer not found!"
+  console-only: "&cThis command can only be used from console!"
+  player-only: "&cThis command can only be used by players!"
+
+# Dragon Egg messages
+egg:
+  obtained: "&6&lYou obtained the Dragon Egg! &7Feel its power flowing through you..."
+  bonded: "&5&lThe Dragon Egg has bonded to you! &7Only you can wield its power."
+  cannot-use: "&cThis Dragon Egg belongs to another player!"
+  cannot-steal: "&cYou cannot steal a bonded Dragon Egg!"
+  cannot-place: "&cDragon Eggs cannot be placed! &7They are meant to be held."
+  placed: "&aDragon Egg placed successfully! &7Its power radiates in this area."
+  broken: "&cThe Dragon Egg was broken! &7Its power has been released."
+  in-range: "&aYou feel the Dragon Egg's power blessing you!"
+  out-of-range: "&7You left the Dragon Egg's power range."
+
+# Effects messages
+effects:
+  added: "&aAdded effect &e%effect% &alevel &e%level%&a!"
+  removed: "&cRemoved effect &e%effect%&c!"
+  level-set: "&aSet effect &e%effect% &ato level &e%level%&a!"
+  cleared: "&cAll effects have been cleared!"
+  list: "&7Active effects: &e%effects%"
+  max-level: "&cEffect level cannot exceed %max%!"
+
+# Hearts messages
+hearts:
+  set: "&aSet extra hearts to &e%amount%&a!"
+  added: "&aAdded &e%amount% &aextra hearts!"
+  removed: "&cRemoved &e%amount% &cextra hearts!"
+  max-reached: "&cMaximum hearts cap reached!"
+  current: "&7You have &e%current% &7extra hearts."
+  bonus: "&6+❤️ +%amount% HP Bonus!"
+
+# Fury messages
+fury:
+  activated: "&c&l⚔ DRAGON FURY ACTIVATED! ⚔&r&c"
+  deactivated: "&7Dragon Fury has ended."
+  cooldown: "&cDragon Fury is on cooldown! &7(%seconds%s remaining)"
+  low-health: "&c&lYour health is critical! Dragon Fury available!"
+
+# Aura messages
+aura:
+  applied: "&aDragon Aura is blessing nearby allies!"
+  removed: "&7Dragon Aura effect ended."
+  tick: "&5✨ Dragon Aura heals you for %amount% HP!"
+
+# Shield messages
+shield:
+  activated: "&6&l🛡 Dragon Shield blocked the attack! 🛡"
+  cooldown: "&7Dragon Shield recharging... &e(%seconds%s)"
+
+# Revive messages
+revive:
+  triggered: "&6&l✨ DRAGON REVIVE! ✨&r&6"
+  message: "&aThe Dragon Egg saved you from death!"
+  cooldown: "&cRevive is on cooldown! &7(%hours%h %minutes%m remaining)"
+  available: "&6&l✨ You can now revive once more!"
+
+# Evolution messages
+evolution:
+  leveled-up: "&5&l🐉 Dragon Egg evolved to Level %level%! 🐉"
+  new-ability: "&aUnlocked new ability: &e%ability%"
+  progress: "&7Evolution progress: &e%current%&7/&e%required% &7(%percent%)"
+  stage-info: "&7Level &e%level%&7: &e%kills% &7kills, &e%playtime% &7hours playtime"
+
+# Bond messages
+bond:
+  info: "&7Bonded to: &e%player%"
+  since: "&7Since: &e%date%"
+  no-bond: "&7This egg is not bonded to anyone."
+
+# Menu messages
+menu:
+  title: "&5&lDragon Egg Configuration"
+  toggle-on: "&a&lENABLED"
+  toggle-off: "&c&lDISABLED"
+  effects: "&7Manage Effects"
+  hearts: "&7Manage Extra Hearts"
+  mechanics: "&7Manage Mechanics"
+  visuals: "&7Manage Visual Effects"
+  back: "&7Back"
+  close: "&7Close Menu"
+  confirm: "&aConfirm"
+  cancel: "&cCancel"
+
+# Command messages
+commands:
+  usage: "&cUsage: &e%usage%"
+  give: "&aGave Dragon Egg to &e%player%&a!"
+  info-header: "&5&l=== Dragon Egg Info ==="
+  info-bonded: "&7Bonded: &e%bonded%"
+  info-hearts: "&7Extra Hearts: &e%hearts%"
+  info-effects: "&7Effects: &e%effects%"
+  info-evolution: "&7Evolution Level: &e%level%"
+  help-header: "&5&l=== Dragon Egg Commands ==="
+  help-give: "&e/dragonegg give <player> &7- Give Dragon Egg"
+  help-reload: "&e/dragonegg reload &7- Reload configuration"
+  help-info: "&e/dragonegg info &7- Show Dragon Egg info"
+  help-sethearts: "&e/dragonegg sethearts <amount> &7- Set extra hearts"
+  help-addeffect: "&e/dragonegg addEffect <effect> <level> &7- Add effect"
+  help-removeeffect: "&e/dragonegg removeEffect <effect> &7- Remove effect"
+  help-seteffect: "&e/dragonegg setEffectLevel <effect> <level> &7- Set effect level"
+  help-cleareffects: "&e/dragonegg clearEffects &7- Clear all effects"
+  help-menu: "&e/dragonegg menu &7- Open configuration menu"
+
+# Death messages
+death:
+  with-egg: "&c%player% &7was slain while wielding the Dragon Egg's power!"
+  by-egg-holder: "&c%player% &7was slain by &c%killer% &7who wields the Dragon Egg!"
+
+# Sound configurations
+sounds:
+  obtain: "ENTITY_ENDER_DRAGON_GROWL:1.0:1.0"
+  activate: "ENTITY_ENDER_DRAGON_FLAP:1.0:1.5"
+  evolve: "ENTITY_ENDER_DRAGON_GROWL:1.0:0.5"
+  fury: "ENTITY_GENERIC_EXPLODE:1.0:1.5"
+  shield: "BLOCK_ANVIL_PLACE:1.0:2.0"
+  revive: "ENTITY_PLAYER_LEVELUP:1.0:1.0"
+  menu-click: "UI_BUTTON_CLICK:1.0:1.0"
